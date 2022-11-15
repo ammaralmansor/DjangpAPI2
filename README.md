@@ -1,2 +1,2 @@
-# DjangpAPI2
- Django API ... Postgre & Docker
+# DjangoAPI
+Django Api Test
