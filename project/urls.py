@@ -16,13 +16,22 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path , include
 from personalNotes.views import *
+from rest_framework.urlpatterns import format_suffix_patterns
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     
-    #no rest no model --> Json Format Response
+    #----------------------------------FBV------------------------------------
     path('LAN' , Listing_Adding_Note ),
     path('LAA' , Listing_Adding_Auther ),
     path('DRPN/<int:pk>' , Deleting_Retrieving_Putting_one_note ),
 
+
+    #----------------------------------CBV------------------------------------
+    path('CBV_Listing_Adding_Note' , NoteList.as_view() ),
+    path('CBV_Listing_Adding_Auther' , AuthersList.as_view() ),
+    path('CBV_Retrieving_Update_Delete_Note/<int:pk>' , RetrievingOne.as_view() ),
+
 ]
+
+urlpatterns = format_suffix_patterns(urlpatterns)

@@ -30,7 +30,7 @@ Second Step :
    - The project will work : 127.0.1:8000
 
 Third Step :
-- go to <code> 127.0.1:8000/LAA </code> to Add Authers in first 
+- go to `127.0.1:8000/LAA` to Add Authers in first or `127.0.1:8000/CBV_Listing_Adding_Auther`
 - 127.0.1:8000/LAA : `It will return the list of authors by default`
 - type in this sytax to add Auther by API :
         {
@@ -54,7 +54,7 @@ If added successfully ... Otherwise `HTTP 400 Bad Request Error'
 ## Adding a note.
 ## Listing all notes.
 
--  go to <code> 127.0.1:8000/LAN </code> to Add Notes in first 
+-  go to `127.0.1:8000/LAN ` to Add Notes in first  or `127.0.1:8000/CBV_Listing_Adding_Note`
 - 127.0.1:8000/LAN : `It will return the list of Notes by default`
 - type in this sytax to add Note by API :
     {
@@ -80,7 +80,7 @@ If added successfully ... Otherwise `HTTP 400 Bad Request Error'
 ## Deleting a note.
 ## Retrieving one note by id.
 
-- go to <code> http://127.0.0.1:8000/DRPN/1 </code> to Retrieving Note with id = 1
+- go to `http://127.0.0.1:8000/DRPN/1` to Retrieving Note with id = 1 or `CBV_Retrieving_Update_Delete_Note/<int:pk>`
 - you can .. Delete or  Update it
 - You will get : 
       
