@@ -6,11 +6,11 @@ class NoteSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Note
-        fields = ['auther','note']
+        fields = ['pk','auther','note']
 
 class AutherSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Auther
-        fields = ['name']
+        fields = ['pk','name']
 
